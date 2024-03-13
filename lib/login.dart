@@ -13,7 +13,12 @@ class _LoginState extends State<Login> {
     final screensize = MediaQuery.of(context).size;
     return Scaffold(
       body: Scaffold(
-        body: SizedBox(),
+        body: SizedBox(
+          width: screensize.width,
+          height: screensize.height,
+          child:
+              Image.asset("asset/asset/5b401b955622ed1c02596fecdc965edc.jpeg"),
+        ),
       ),
     );
   }
