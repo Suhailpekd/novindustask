@@ -11,10 +11,10 @@ class Button extends StatelessWidget {
       padding: const EdgeInsets.all(23),
       child: Container(
         child: child,
-        height: 50,
+        height: 57,
         width: screensize.width / 7,
         decoration: BoxDecoration(
-          color: Color.fromARGB(239, 1, 123, 67),
+          color: Color.fromARGB(238, 2, 89, 48),
           borderRadius: BorderRadius.circular(15),
         ),
       ),

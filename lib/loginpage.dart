@@ -57,8 +57,15 @@ class _LoginpageState extends State<Loginpage> {
               child: Center(
                   child: Text(
             "Login",
-            style: TextStyle(color: Colors.white),
-          )))
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ))),
+          Padding(
+            padding: const EdgeInsets.only(left: 12, right: 9, top: 110),
+            child: Text(
+              "By creating or logging into an account you are agreeing with our Terms and Conditions and Privacy Policy.",
+              style: TextStyle(fontSize: 13),
+            ),
+          )
         ],
       ),
     );
