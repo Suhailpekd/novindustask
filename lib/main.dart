@@ -1,6 +1,6 @@
-import 'package:ayurvedha/home.dart';
-import 'package:ayurvedha/splash.dart';
-import 'package:ayurvedha/loginpage.dart';
+import 'package:ayurvedha/screens/home.dart';
+import 'package:ayurvedha/screens/splash.dart';
+import 'package:ayurvedha/screens/loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

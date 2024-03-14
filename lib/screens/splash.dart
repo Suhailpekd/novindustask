@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ayurvedha/loginpage.dart';
+import 'package:ayurvedha/screens/loginpage.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {

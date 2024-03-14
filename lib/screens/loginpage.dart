@@ -1,7 +1,7 @@
 import 'package:ayurvedha/classes/button.dart';
 import 'package:ayurvedha/classes/greycontainer.dart';
 import 'package:ayurvedha/classes/textbox.dart';
-import 'package:ayurvedha/home.dart';
+import 'package:ayurvedha/screens/home.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
