@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Greycontainer extends StatelessWidget {
   var child;
-  var haight;
+  double haight;
   Greycontainer({super.key, required this.child, required this.haight});
 
   @override
