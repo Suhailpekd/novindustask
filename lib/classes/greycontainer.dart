@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Greycontainer extends StatelessWidget {
   var child;
-  double haight;
+  var haight;
   Greycontainer({super.key, required this.child, required this.haight});
 
   @override
@@ -16,7 +16,7 @@ class Greycontainer extends StatelessWidget {
         width: screensize.width,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            color: Color.fromARGB(255, 226, 220, 220),
+            color: Color.fromARGB(255, 248, 243, 243),
             border: Border.all(
                 color: Color.fromARGB(255, 237, 233, 233), width: 2)),
       ),

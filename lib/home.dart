@@ -1,3 +1,5 @@
+import 'package:ayurvedha/classes/button.dart';
+import 'package:ayurvedha/classes/grey.dart';
 import 'package:ayurvedha/classes/greycontainer.dart';
 import 'package:flutter/material.dart';
 
@@ -130,21 +132,35 @@ class _HomeState extends State<Home> {
               color: Colors.grey,
             ),
           ),
-          Greycontainer(
-            child: Column(children: []),
-            haight: 150,
-          ),
-          Greycontainer(
-            child: Column(children: []),
-            haight: 150,
-          ),
-          Greycontainer(
-            child: Column(children: []),
-            haight: 150,
-          ),
-          Greycontainer(
-            child: Column(children: []),
-            haight: 150,
+          Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              SizedBox(
+                height: 400,
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [Grey(), Grey()],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12),
+                child: Container(
+                  child: Center(
+                    child: Text(
+                      "Registor Now",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  height: 50,
+                  width: MediaQuery.of(context).size.width / 1.2,
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(238, 2, 89, 48),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+            ],
           )
         ],
       ),
