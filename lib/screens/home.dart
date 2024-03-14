@@ -161,6 +161,56 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ],
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.only(top: 40, left: 20, right: 20, bottom: 30),
+            child: Container(
+              child: Column(children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.calendar_today, color: Colors.red),
+                        SizedBox(width: 8),
+                        Text("14/10/2024"),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.person, color: Colors.red),
+                        SizedBox(width: 8),
+                        Text("Jitheesh"),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 8),
+                Divider(),
+                SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text("View Booking Details"),
+                          Icon(Icons.arrow_forward),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ]),
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Color.fromARGB(255, 245, 236, 236),
+                  border: Border.all(
+                      color: Color.fromARGB(255, 237, 233, 233), width: 2)),
+            ),
           )
         ],
       ),
