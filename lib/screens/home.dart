@@ -1,6 +1,7 @@
 import 'package:ayurvedha/classes/button.dart';
 import 'package:ayurvedha/classes/grey.dart';
 import 'package:ayurvedha/classes/greycontainer.dart';
+import 'package:ayurvedha/screens/registor.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -145,18 +146,25 @@ class _HomeState extends State<Home> {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 12, right: 12),
-                child: Container(
-                  child: Center(
-                    child: Text(
-                      "Registor Now",
-                      style: TextStyle(color: Colors.white),
+                child: InkWell(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Registor(),
+                      )),
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        "Registor Now",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-                  ),
-                  height: 50,
-                  width: MediaQuery.of(context).size.width / 1.2,
-                  decoration: BoxDecoration(
-                    color: Color.fromARGB(238, 2, 89, 48),
-                    borderRadius: BorderRadius.circular(15),
+                    height: 50,
+                    width: MediaQuery.of(context).size.width / 1.2,
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(238, 2, 89, 48),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                   ),
                 ),
               ),
