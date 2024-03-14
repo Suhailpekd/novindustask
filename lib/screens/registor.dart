@@ -1,3 +1,4 @@
+import 'package:ayurvedha/classes/button.dart';
 import 'package:ayurvedha/classes/greycontainer.dart';
 import 'package:ayurvedha/classes/textbox.dart';
 import 'package:flutter/material.dart';
@@ -191,6 +192,132 @@ class _RegistorState extends State<Registor> {
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Tottel Amount",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Textbox(
+                child: TextFormField(
+                    decoration: InputDecoration(border: InputBorder.none))),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Discount Amount",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Textbox(
+                child: TextFormField(
+                    decoration: InputDecoration(border: InputBorder.none))),
+            Padding(
+              padding: const EdgeInsets.only(left: 18, right: 18),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Radio(
+                    value: 1,
+                    groupValue:
+                        null, // Provide a group value to handle multiple radio buttons
+                    onChanged: (value) {
+                      // Handle radio button selection
+                    },
+                  ),
+                  Text('Cash'),
+                  Radio(
+                    value: 2,
+                    groupValue:
+                        null, // Provide a group value to handle multiple radio buttons
+                    onChanged: (value) {
+                      // Handle radio button selection
+                    },
+                  ),
+                  Text('Card'),
+                  Radio(
+                    value: 3,
+                    groupValue:
+                        null, // Provide a group value to handle multiple radio buttons
+                    onChanged: (value) {
+                      // Handle radio button selection
+                    },
+                  ),
+                  Text('Upi'),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Advance Amount",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Textbox(
+                child: TextFormField(
+                    decoration: InputDecoration(border: InputBorder.none))),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Balence Amount",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Textbox(
+                child: TextFormField(
+                    decoration: InputDecoration(border: InputBorder.none))),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Treatment Date",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Textbox(
+                child: TextFormField(
+                    decoration: InputDecoration(border: InputBorder.none))),
+            Padding(
+              padding: const EdgeInsets.only(left: 28),
+              child: Text(
+                "Treatment Time",
+                style: TextStyle(fontSize: 17),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  child: TextFormField(
+                      decoration: InputDecoration(border: InputBorder.none)),
+                  height: 48,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Color.fromARGB(255, 248, 243, 243),
+                      border: Border.all(
+                          color: Color.fromARGB(255, 237, 233, 233), width: 2)),
+                ),
+                Container(
+                  child: TextFormField(
+                      decoration: InputDecoration(border: InputBorder.none)),
+                  height: 48,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Color.fromARGB(255, 248, 243, 243),
+                      border: Border.all(
+                          color: Color.fromARGB(255, 237, 233, 233), width: 2)),
+                ),
+              ],
+            ),
+            Button(
+              child: Center(
+                  child: Text(
+                "Save",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              )),
             )
           ],
         ));
