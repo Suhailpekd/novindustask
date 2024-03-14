@@ -1,15 +1,16 @@
 import 'package:ayurvedha/classes/button.dart';
 import 'package:ayurvedha/classes/textbox.dart';
+import 'package:ayurvedha/home.dart';
 import 'package:flutter/material.dart';
 
-class Loginpage extends StatefulWidget {
-  const Loginpage({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<Loginpage> createState() => _LoginpageState();
+  State<Login> createState() => _LoginState();
 }
 
-class _LoginpageState extends State<Loginpage> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,12 +54,19 @@ class _LoginpageState extends State<Loginpage> {
           Textbox(
               child: TextFormField(
                   decoration: InputDecoration(border: InputBorder.none))),
-          Button(
-              child: Center(
-                  child: Text(
-            "Login",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ))),
+          InkWell(
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                )),
+            child: Button(
+                child: Center(
+                    child: Text(
+              "Login",
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ))),
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 12, right: 9, top: 110),
             child: Text(

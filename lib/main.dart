@@ -1,4 +1,5 @@
-import 'package:ayurvedha/login.dart';
+import 'package:ayurvedha/home.dart';
+import 'package:ayurvedha/splash.dart';
 import 'package:ayurvedha/loginpage.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Loginpage(),
+      home: const Splash(),
     );
   }
 }
