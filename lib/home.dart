@@ -1,3 +1,4 @@
+import 'package:ayurvedha/classes/greycontainer.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -122,6 +123,28 @@ class _HomeState extends State<Home> {
                 )
               ],
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: Divider(
+              color: Colors.grey,
+            ),
+          ),
+          Greycontainer(
+            child: Column(children: []),
+            haight: 150,
+          ),
+          Greycontainer(
+            child: Column(children: []),
+            haight: 150,
+          ),
+          Greycontainer(
+            child: Column(children: []),
+            haight: 150,
+          ),
+          Greycontainer(
+            child: Column(children: []),
+            haight: 150,
           )
         ],
       ),

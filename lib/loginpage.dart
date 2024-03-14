@@ -1,4 +1,5 @@
 import 'package:ayurvedha/classes/button.dart';
+import 'package:ayurvedha/classes/greycontainer.dart';
 import 'package:ayurvedha/classes/textbox.dart';
 import 'package:ayurvedha/home.dart';
 import 'package:flutter/material.dart';
@@ -73,7 +74,7 @@ class _LoginState extends State<Login> {
               "By creating or logging into an account you are agreeing with our Terms and Conditions and Privacy Policy.",
               style: TextStyle(fontSize: 13),
             ),
-          )
+          ),
         ],
       ),
     );
